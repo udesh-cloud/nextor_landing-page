@@ -58,24 +58,24 @@ export function Verticals({ onNavigate }: VerticalsProps) {
   ];
 
   return (
-    <section className="py-12 sm:py-16 md:py-24 bg-[#0a0a0a]">
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
-        <div className="mb-8 sm:mb-12 md:mb-16">
-          <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
+    <section className="py-24 bg-[#0a0a0a]">
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+        <div className="mb-16">
+          <div className="flex items-center gap-3 mb-4">
             <div className="flex gap-1">
               <div className="w-1 h-1 bg-[#ffff00] rounded-full"></div>
               <div className="w-1 h-1 bg-[#ffff00] rounded-full"></div>
               <div className="w-1 h-1 bg-[#ffff00] rounded-full"></div>
             </div>
-            <span className="text-xs sm:text-sm text-[#ffff00] tracking-[0.3em] uppercase">Our Core Verticals</span>
+            <span className="text-[#ffff00] tracking-[0.3em] uppercase">Our Core Verticals</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-tight">
+          <h2 className="text-4xl md:text-5xl tracking-tight">
             FROM ESPORTS TO CYBERSECURITY,<br />
             TRAVEL TO <span className="text-[#ffff00]">E-COMMERCE</span>
           </h2>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {verticals.map((vertical, index) => {
             const Icon = vertical.icon;
             return (
@@ -89,7 +89,7 @@ export function Verticals({ onNavigate }: VerticalsProps) {
                 </div>
 
                 {/* Image Background */}
-                <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden">
+                <div className="relative h-64 overflow-hidden">
                   <img
                     src={vertical.image}
                     alt={vertical.title}
@@ -98,21 +98,21 @@ export function Verticals({ onNavigate }: VerticalsProps) {
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent"></div>
                   
                   {vertical.isNew && (
-                    <div className="absolute top-2 left-2 sm:top-4 sm:left-4 px-2 py-1 sm:px-3 sm:py-1 bg-[#ffff00] text-black tracking-wider z-20 text-xs sm:text-sm">
+                    <div className="absolute top-4 left-4 px-3 py-1 bg-[#ffff00] text-black tracking-wider z-20">
                       NEW
                     </div>
                   )}
                 </div>
 
                 {/* Content */}
-                <div className="p-4 sm:p-6">
-                  <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
-                    <Icon className="w-5 h-5 sm:w-6 sm:h-6 text-[#ffff00]" />
+                <div className="p-6">
+                  <div className="flex items-center gap-3 mb-4">
+                    <Icon className="w-6 h-6 text-[#ffff00]" />
                     <div className="h-px flex-1 bg-gray-800"></div>
                   </div>
 
-                  <h3 className="mb-2 sm:mb-3 tracking-wider text-sm sm:text-base">{vertical.title}</h3>
-                  <p className="text-gray-400 mb-3 sm:mb-4 leading-relaxed text-xs sm:text-sm">{vertical.description}</p>
+                  <h3 className="mb-3 tracking-wider">{vertical.title}</h3>
+                  <p className="text-gray-400 mb-4 leading-relaxed text-sm">{vertical.description}</p>
 
                   {vertical.features && (
                     <ul className="space-y-2 mb-4">

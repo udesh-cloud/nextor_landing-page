@@ -32,35 +32,57 @@ export function PartneredWith({ title = 'Partnered With' }: PartneredWithProps) 
   ];
 
   const logos = title === 'Our Brands' ? ourBrandsLogos : partneredLogos;
+  
+  // Duplicate logos for seamless loop
+  const duplicatedLogos = [...logos, ...logos];
 
   return (
-    <section className="py-8 sm:py-12 md:py-16 bg-black border-y border-gray-800/50">
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
-        <h3 className="text-center text-white mb-6 sm:mb-8 tracking-[0.3em] uppercase text-sm sm:text-base">
+    <section className="py-16 bg-black border-y border-gray-800/50">
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+        <h3 className="text-center text-white mb-8 tracking-[0.3em] uppercase">
           {title}
         </h3>
-        {/* Horizontal layout for all logos */}
-        <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-12">
-          {logos.map((logo, index) => (
-            <div
-              key={index}
-              className="flex items-center justify-center p-2 sm:p-3 md:p-4 bg-gray-100 border border-gray-800/50 hover:border-[#ffff00]/50 hover:bg-gray-200 transition-all group rounded"
-            >
+        {/* Horizontal scrolling animation */}
+        <div className="overflow-hidden relative">
+          <div className="flex items-center gap-8 md:gap-12 animate-scroll">
+            {duplicatedLogos.map((logo, index) => (
               <img 
+                key={index}
                 src={logo.image} 
                 alt={logo.name} 
-                className="w-auto h-auto object-contain"
+                className="w-auto h-auto object-contain flex-shrink-0"
                 style={{
                   maxHeight: 
-                    logo.name === 'Cyber Origins' ? 'clamp(60px, 8vw, 120px)' : 
-                    logo.name === 'Strike 1 Esports' ? 'clamp(55px, 7vw, 110px)' : 
-                    'clamp(40px, 6vw, 80px)',
-                  maxWidth: 'clamp(80px, 12vw, 150px)'
+                    logo.name === 'Cyber Origins' ? '120px' : 
+                    logo.name === 'Strike 1 Esports' ? '110px' : 
+                    '80px'
                 }}
               />
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
+        <style>{`
+          @keyframes scroll {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(-50%);
+            }
+          }
+          .animate-scroll {
+            animation: scroll 20s linear infinite;
+            will-change: transform;
+          }
+          .animate-scroll:hover {
+            animation-play-state: paused;
+          }
+          @media (max-width: 768px) {
+            .animate-scroll {
+              animation-duration: 15s;
+            }
+          }
+        `}</style>
       </div>
     </section>
   );

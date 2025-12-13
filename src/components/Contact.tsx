@@ -61,30 +61,30 @@ export function Contact() {
   ];
 
   return (
-    <section className="py-12 sm:py-16 md:py-24 bg-[#0a0a0a]">
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
-        <div className="mb-8 sm:mb-12 md:mb-16">
-          <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
+    <section className="py-24 bg-[#0a0a0a]">
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+        <div className="mb-16">
+          <div className="flex items-center gap-3 mb-4">
             <div className="flex gap-1">
               <div className="w-1 h-1 bg-[#ffff00] rounded-full"></div>
               <div className="w-1 h-1 bg-[#ffff00] rounded-full"></div>
               <div className="w-1 h-1 bg-[#ffff00] rounded-full"></div>
             </div>
-            <span className="text-xs sm:text-sm text-[#ffff00] tracking-[0.3em] uppercase">Get In Touch</span>
+            <span className="text-[#ffff00] tracking-[0.3em] uppercase">Get In Touch</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-tight">
+          <h2 className="text-4xl md:text-5xl tracking-tight">
             LET'S BUILD SOMETHING<br />
             <span className="text-[#ffff00]">AMAZING TOGETHER</span>
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12">
+        <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <div className="bg-black border border-gray-800/50 p-4 sm:p-6 md:p-8">
-            <h3 className="mb-6 sm:mb-8 tracking-wider text-sm sm:text-base">SEND US A MESSAGE</h3>
-            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+          <div className="bg-black border border-gray-800/50 p-8">
+            <h3 className="mb-8 tracking-wider">SEND US A MESSAGE</h3>
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-xs sm:text-sm text-gray-500 mb-2 tracking-wider uppercase">
+                <label htmlFor="name" className="block text-sm text-gray-500 mb-2 tracking-wider uppercase">
                   Name *
                 </label>
                 <input
@@ -94,13 +94,13 @@ export function Contact() {
                   required
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-3 sm:px-4 py-2 sm:py-3 text-sm sm:text-base bg-[#0a0a0a] border border-gray-800 focus:outline-none focus:border-[#ffff00] transition-colors"
+                  className="w-full px-4 py-3 bg-[#0a0a0a] border border-gray-800 focus:outline-none focus:border-[#ffff00] transition-colors"
                   placeholder="Your name"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-xs sm:text-sm text-gray-500 mb-2 tracking-wider uppercase">
+                <label htmlFor="email" className="block text-sm text-gray-500 mb-2 tracking-wider uppercase">
                   Email *
                 </label>
                 <input
@@ -110,13 +110,13 @@ export function Contact() {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-3 sm:px-4 py-2 sm:py-3 text-sm sm:text-base bg-[#0a0a0a] border border-gray-800 focus:outline-none focus:border-[#ffff00] transition-colors"
+                  className="w-full px-4 py-3 bg-[#0a0a0a] border border-gray-800 focus:outline-none focus:border-[#ffff00] transition-colors"
                   placeholder="your@email.com"
                 />
               </div>
 
               <div>
-                <label htmlFor="company" className="block text-xs sm:text-sm text-gray-500 mb-2 tracking-wider uppercase">
+                <label htmlFor="company" className="block text-sm text-gray-500 mb-2 tracking-wider uppercase">
                   Company
                 </label>
                 <input
@@ -125,13 +125,13 @@ export function Contact() {
                   name="company"
                   value={formData.company}
                   onChange={handleChange}
-                  className="w-full px-3 sm:px-4 py-2 sm:py-3 text-sm sm:text-base bg-[#0a0a0a] border border-gray-800 focus:outline-none focus:border-[#ffff00] transition-colors"
+                  className="w-full px-4 py-3 bg-[#0a0a0a] border border-gray-800 focus:outline-none focus:border-[#ffff00] transition-colors"
                   placeholder="Your company"
                 />
               </div>
 
               <div>
-                <label htmlFor="vertical" className="block text-xs sm:text-sm text-gray-500 mb-2 tracking-wider uppercase">
+                <label htmlFor="vertical" className="block text-sm text-gray-500 mb-2 tracking-wider uppercase">
                   Interested Vertical
                 </label>
                 <select
@@ -139,7 +139,7 @@ export function Contact() {
                   name="vertical"
                   value={formData.vertical}
                   onChange={handleChange}
-                  className="w-full px-3 sm:px-4 py-2 sm:py-3 text-sm sm:text-base bg-[#0a0a0a] border border-gray-800 focus:outline-none focus:border-[#ffff00] transition-colors"
+                  className="w-full px-4 py-3 bg-[#0a0a0a] border border-gray-800 focus:outline-none focus:border-[#ffff00] transition-colors"
                 >
                   <option value="">Select a vertical</option>
                   <option value="esports">Esports</option>
@@ -154,7 +154,7 @@ export function Contact() {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-xs sm:text-sm text-gray-500 mb-2 tracking-wider uppercase">
+                <label htmlFor="message" className="block text-sm text-gray-500 mb-2 tracking-wider uppercase">
                   Message *
                 </label>
                 <textarea
@@ -164,43 +164,43 @@ export function Contact() {
                   value={formData.message}
                   onChange={handleChange}
                   rows={5}
-                  className="w-full px-3 sm:px-4 py-2 sm:py-3 text-sm sm:text-base bg-[#0a0a0a] border border-gray-800 focus:outline-none focus:border-[#ffff00] transition-colors resize-none"
+                  className="w-full px-4 py-3 bg-[#0a0a0a] border border-gray-800 focus:outline-none focus:border-[#ffff00] transition-colors resize-none"
                   placeholder="Tell us about your project..."
                 />
               </div>
 
               <button
                 type="submit"
-                className="group relative w-full px-6 sm:px-8 py-3 sm:py-4 bg-[#ffff00] text-black tracking-wider overflow-hidden text-sm sm:text-base"
+                className="group relative w-full px-8 py-4 bg-[#ffff00] text-black tracking-wider overflow-hidden"
               >
                 <div className="absolute inset-0 bg-white transform translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
                 <div className="relative flex items-center justify-center gap-2">
                   SEND MESSAGE
-                  <Send className="w-4 h-4 sm:w-5 sm:h-5" />
+                  <Send className="w-5 h-5" />
                 </div>
               </button>
             </form>
           </div>
 
           {/* Contact Info */}
-          <div className="space-y-6 sm:space-y-8">
+          <div className="space-y-8">
             <div>
-              <h3 className="mb-4 sm:mb-6 tracking-wider text-sm sm:text-base">CONTACT INFORMATION</h3>
-              <div className="space-y-3 sm:space-y-4">
+              <h3 className="mb-6 tracking-wider">CONTACT INFORMATION</h3>
+              <div className="space-y-4">
                 {contactInfo.map((info, index) => {
                   const Icon = info.icon;
                   return (
                     <a
                       key={index}
                       href={info.link}
-                      className="group flex items-start gap-3 sm:gap-4 p-4 sm:p-6 bg-black border border-gray-800/50 hover:border-[#ffff00]/50 transition-all"
+                      className="group flex items-start gap-4 p-6 bg-black border border-gray-800/50 hover:border-[#ffff00]/50 transition-all"
                     >
-                      <div className="p-2 sm:p-3 border border-gray-800 group-hover:border-[#ffff00] group-hover:bg-[#ffff00]/10 transition-all flex-shrink-0">
-                        <Icon className="w-5 h-5 sm:w-6 sm:h-6 text-[#ffff00]" />
+                      <div className="p-3 border border-gray-800 group-hover:border-[#ffff00] group-hover:bg-[#ffff00]/10 transition-all">
+                        <Icon className="w-6 h-6 text-[#ffff00]" />
                       </div>
-                      <div className="min-w-0">
-                        <p className="text-gray-500 mb-1 tracking-wider text-xs sm:text-sm">{info.title}</p>
-                        <p className="text-sm sm:text-base group-hover:text-[#ffff00] transition-colors break-words">{info.value}</p>
+                      <div>
+                        <p className="text-gray-500 mb-1 tracking-wider text-sm">{info.title}</p>
+                        <p className="group-hover:text-[#ffff00] transition-colors">{info.value}</p>
                       </div>
                     </a>
                   );
@@ -209,8 +209,8 @@ export function Contact() {
             </div>
 
             <div>
-              <h3 className="mb-4 sm:mb-6 tracking-wider text-sm sm:text-base">FOLLOW US</h3>
-              <div className="flex gap-3 sm:gap-4">
+              <h3 className="mb-6 tracking-wider">FOLLOW US</h3>
+              <div className="flex gap-4">
                 {socialLinks.map((social, index) => {
                   const Icon = social.icon;
                   return (
@@ -218,21 +218,21 @@ export function Contact() {
                       key={index}
                       href={social.link}
                       aria-label={social.label}
-                      className="p-3 sm:p-4 bg-black border border-gray-800/50 hover:border-[#ffff00] hover:bg-[#ffff00]/10 transition-all"
+                      className="p-4 bg-black border border-gray-800/50 hover:border-[#ffff00] hover:bg-[#ffff00]/10 transition-all"
                     >
-                      <Icon className="w-5 h-5 sm:w-6 sm:h-6" />
+                      <Icon className="w-6 h-6" />
                     </a>
                   );
                 })}
               </div>
             </div>
 
-            <div className="bg-black border-2 border-[#ffff00]/30 p-4 sm:p-6">
-              <h4 className="mb-2 tracking-wider text-[#ffff00] text-sm sm:text-base">READY TO PARTNER?</h4>
-              <p className="text-sm sm:text-base text-gray-400 mb-3 sm:mb-4 leading-relaxed">
+            <div className="bg-black border-2 border-[#ffff00]/30 p-6">
+              <h4 className="mb-2 tracking-wider text-[#ffff00]">READY TO PARTNER?</h4>
+              <p className="text-gray-400 mb-4 leading-relaxed">
                 Join leading brands working with Nextor to create exceptional experiences across multiple verticals.
               </p>
-              <p className="text-xs sm:text-sm text-gray-600 tracking-wide">
+              <p className="text-sm text-gray-600 tracking-wide">
                 WE TYPICALLY RESPOND WITHIN 24 HOURS
               </p>
             </div>

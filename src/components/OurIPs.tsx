@@ -31,24 +31,24 @@ export function OurIPs() {
   ];
 
   return (
-    <section className="py-12 sm:py-16 md:py-24 bg-black border-y border-gray-800/50">
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
-        <div className="mb-8 sm:mb-12 md:mb-16">
-          <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
+    <section className="py-24 bg-black border-y border-gray-800/50">
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+        <div className="mb-16">
+          <div className="flex items-center gap-3 mb-4">
             <div className="flex gap-1">
               <div className="w-1 h-1 bg-[#ffff00] rounded-full"></div>
               <div className="w-1 h-1 bg-[#ffff00] rounded-full"></div>
               <div className="w-1 h-1 bg-[#ffff00] rounded-full"></div>
             </div>
-            <span className="text-xs sm:text-sm text-[#ffff00] tracking-[0.3em] uppercase">Our IPs</span>
+            <span className="text-[#ffff00] tracking-[0.3em] uppercase">Our IPs</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-tight">
+          <h2 className="text-4xl md:text-5xl tracking-tight">
             FLAGSHIP BRANDS &<br />
             <span className="text-[#ffff00]">INNOVATION PLATFORMS</span>
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
+        <div className="grid md:grid-cols-2 gap-6">
           {ips.map((ip, index) => {
             const Icon = ip.icon;
             return (
@@ -57,7 +57,7 @@ export function OurIPs() {
                 className="group relative bg-black border border-gray-800/50 overflow-hidden hover:border-[#ffff00]/50 transition-all duration-300"
               >
                 {/* Image Background */}
-                <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden">
+                <div className="relative h-64 overflow-hidden">
                   <img
                     src={ip.image}
                     alt={ip.title}
@@ -67,21 +67,21 @@ export function OurIPs() {
                 </div>
 
                 {/* Content */}
-                <div className="p-4 sm:p-6">
-                  <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
-                    <Icon className="w-5 h-5 sm:w-6 sm:h-6 text-[#ffff00]" />
+                <div className="p-6">
+                  <div className="flex items-center gap-3 mb-4">
+                    <Icon className="w-6 h-6 text-[#ffff00]" />
                     <div className="h-px flex-1 bg-gray-800"></div>
                   </div>
 
-                  <h3 className="mb-2 sm:mb-3 tracking-wider text-sm sm:text-base">{ip.title}</h3>
-                  <p className="text-gray-400 mb-3 sm:mb-4 leading-relaxed text-xs sm:text-sm">{ip.description}</p>
+                  <h3 className="mb-3 tracking-wider">{ip.title}</h3>
+                  <p className="text-gray-400 mb-4 leading-relaxed text-sm">{ip.description}</p>
 
                   {ip.features && (
-                    <ul className="space-y-1.5 sm:space-y-2 mb-3 sm:mb-4">
+                    <ul className="space-y-2 mb-4">
                       {ip.features.map((feature, idx) => (
                         <li key={idx} className="flex items-center gap-2 text-xs text-gray-500">
-                          <div className="w-1 h-1 bg-[#ffff00] rounded-full flex-shrink-0"></div>
-                          <span>{feature}</span>
+                          <div className="w-1 h-1 bg-[#ffff00] rounded-full"></div>
+                          {feature}
                         </li>
                       ))}
                     </ul>

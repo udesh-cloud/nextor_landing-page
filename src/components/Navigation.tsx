@@ -24,8 +24,8 @@ export function Navigation({ activeSection, onNavigate }: NavigationProps) {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0a]/95 backdrop-blur-sm border-b border-gray-800">
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
-        <div className="flex items-center justify-between h-16 sm:h-20">
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <button
             onClick={() => handleNavClick('home')}
@@ -34,7 +34,7 @@ export function Navigation({ activeSection, onNavigate }: NavigationProps) {
             <img 
               src={logoImage} 
               alt="NEXTOR Logo" 
-              className="h-8 sm:h-10 w-auto"
+              className="h-10 w-auto"
             />
           </button>
 
