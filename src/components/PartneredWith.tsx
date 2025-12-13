@@ -34,17 +34,17 @@ export function PartneredWith({ title = 'Partnered With' }: PartneredWithProps) 
   const logos = title === 'Our Brands' ? ourBrandsLogos : partneredLogos;
 
   return (
-    <section className="py-16 bg-black border-y border-gray-800/50">
-      <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-        <h3 className="text-center text-white mb-8 tracking-[0.3em] uppercase">
+    <section className="py-8 sm:py-12 md:py-16 bg-black border-y border-gray-800/50">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
+        <h3 className="text-center text-white mb-6 sm:mb-8 tracking-[0.3em] uppercase text-sm sm:text-base">
           {title}
         </h3>
         {/* Horizontal layout for all logos */}
-        <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+        <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-12">
           {logos.map((logo, index) => (
             <div
               key={index}
-              className="flex items-center justify-center p-4 bg-gray-100 border border-gray-800/50 hover:border-[#ffff00]/50 hover:bg-gray-200 transition-all group rounded"
+              className="flex items-center justify-center p-2 sm:p-3 md:p-4 bg-gray-100 border border-gray-800/50 hover:border-[#ffff00]/50 hover:bg-gray-200 transition-all group rounded"
             >
               <img 
                 src={logo.image} 
@@ -52,9 +52,10 @@ export function PartneredWith({ title = 'Partnered With' }: PartneredWithProps) 
                 className="w-auto h-auto object-contain"
                 style={{
                   maxHeight: 
-                    logo.name === 'Cyber Origins' ? '120px' : 
-                    logo.name === 'Strike 1 Esports' ? '110px' : 
-                    '80px'
+                    logo.name === 'Cyber Origins' ? 'clamp(60px, 8vw, 120px)' : 
+                    logo.name === 'Strike 1 Esports' ? 'clamp(55px, 7vw, 110px)' : 
+                    'clamp(40px, 6vw, 80px)',
+                  maxWidth: 'clamp(80px, 12vw, 150px)'
                 }}
               />
             </div>

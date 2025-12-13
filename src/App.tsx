@@ -15,7 +15,8 @@ export default function App() {
     setActiveSection(section);
     const element = document.getElementById(section);
     if (element) {
-      const offset = 80; // Account for fixed navbar
+      // Responsive offset: 64px (mobile) or 80px (desktop)
+      const offset = window.innerWidth < 640 ? 64 : 80;
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - offset;
 
