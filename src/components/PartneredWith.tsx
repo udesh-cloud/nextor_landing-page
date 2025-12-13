@@ -1,13 +1,13 @@
-import lexarLogo from '../lexar-vector-logo.png';
-import downloadLogo from '../download.png';
-import imagesLogo from '../images (1).png';
-import redingtonLogo from '../Redington-Logo.png';
-import adevoLogo from '../Adevo-New-LOGO-3p.png';
+import lexarLogo from '../assets/images/lexar-vector-logo.png';
+import downloadLogo from '../assets/images/download.png';
+import imagesLogo from '../assets/images/images (1).png';
+import redingtonLogo from '../assets/images/Redington-Logo.png';
+import adevoLogo from '../assets/images/Adevo-New-LOGO-3p.png';
 import hinterlandLogo from '../assets/images/Screenshot 2025-12-13 151506.png';
 import cafeClutchLogo from '../assets/images/Screenshot 2025-12-13 151652.png';
 import cyberOriginsLogo from '../assets/images/Cyber Origins (WITH TAGLINE).png';
 import strike1Logo from '../assets/images/For_dark_bg_usage-39.png';
-import hackonxLogo from '../Screenshot 2025-12-13 172825.png';
+import hackonxLogo from '../assets/images/Screenshot 2025-12-13 172825.png';
 
 interface PartneredWithProps {
   title?: string;
