@@ -24,19 +24,31 @@ export function Contact() {
     {
       icon: Mail,
       title: 'EMAIL',
-      value: 'hello@nextor.com',
-      link: 'mailto:hello@nextor.com'
+      value: 'nishant@nextor.live',
+      link: 'mailto:nishant@nextor.live'
+    },
+    {
+      icon: Mail,
+      title: 'EMAIL',
+      value: 'operations@nextor.live',
+      link: 'mailto:operations@nextor.live'
     },
     {
       icon: Phone,
       title: 'PHONE',
-      value: '+91 98765 43210',
-      link: 'tel:+919876543210'
+      value: '+91 98869 77722',
+      link: 'tel:+919886977722'
+    },
+    {
+      icon: Phone,
+      title: 'PHONE',
+      value: '+91 80735 91399',
+      link: 'tel:+918073591399'
     },
     {
       icon: MapPin,
       title: 'OFFICE',
-      value: 'Mumbai, India',
+      value: 'Bengaluru, India',
       link: '#'
     }
   ];

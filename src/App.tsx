@@ -54,7 +54,7 @@ export default function App() {
       <main>
         <div id="home">
           <Hero onNavigate={handleNavigate} />
-          <PartneredWith />
+          <PartneredWith title="Partnered With" />
         </div>
 
         <div id="about">
@@ -63,6 +63,7 @@ export default function App() {
 
         <div id="verticals">
           <Verticals onNavigate={handleNavigate} />
+          <PartneredWith title="Our Brands" />
         </div>
 
         <div id="ips">

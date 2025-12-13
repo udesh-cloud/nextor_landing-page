@@ -1,5 +1,5 @@
 import { ArrowRight, Users } from 'lucide-react';
-import heroImage from '../assets/images/group-multiracial-teens-playing-video-games-video-game-club-with-blue-red-illumination-excited-because-victory_1268-24592.avif';
+import heroImage from '../assets/images/1724322281.3452teens-playing-in-video-game-club-2023-11-27-05-26-04-utc.jpg';
 
 interface HeroProps {
   onNavigate: (section: string) => void;
