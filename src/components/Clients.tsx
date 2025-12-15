@@ -1,14 +1,16 @@
 import hinterlandLogo from '../assets/images/Screenshot 2025-12-13 151506.png';
-import cafeClutchLogo from '../assets/images/Screenshot 2025-12-13 151652.png';
+import cafeClutchLogo from '../assets/images/cafe-clutch-logo.png';
 import cyberOriginsLogo from '../assets/images/Cyber Origins (WITH TAGLINE).png';
 import strike1Logo from '../assets/images/For_dark_bg_usage-39.png';
+import hackonxLogo from '../assets/images/hackonx-logo.png';
 
 export function Clients() {
   const logos = [
     { name: 'Hinterland Voyages', image: hinterlandLogo },
     { name: 'Cafe Clutch', image: cafeClutchLogo },
     { name: 'Cyber Origins', image: cyberOriginsLogo },
-    { name: 'Strike 1 Esports', image: strike1Logo }
+    { name: 'Strike 1 Esports', image: strike1Logo },
+    { name: 'HackonX', image: hackonxLogo }
   ];
 
   return (
@@ -38,14 +40,16 @@ export function Clients() {
             {logos.map((logo, index) => (
               <div
                 key={index}
-                className="flex items-center justify-center p-6 bg-gray-100 border border-gray-800/50 hover:border-[#ffff00]/50 hover:bg-gray-200 transition-all group rounded"
+                className="flex items-center justify-center p-6 bg-black border border-gray-800/50 hover:border-[#ffff00]/50 transition-all group rounded"
               >
                 <img 
                   src={logo.image} 
                   alt={logo.name} 
-                  className={`max-w-full h-auto object-contain ${
-                    logo.name === 'Cyber Origins' ? 'max-h-24' : 'max-h-16'
-                  }`}
+                  className="max-w-full h-auto object-contain"
+                  style={{
+                    maxHeight: '80px',
+                    maxWidth: '200px'
+                  }}
                 />
               </div>
             ))}

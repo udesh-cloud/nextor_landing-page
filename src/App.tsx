@@ -63,7 +63,7 @@ export default function App() {
 
         <div id="verticals">
           <Verticals onNavigate={handleNavigate} />
-          <PartneredWith title="Our Brands" />
+          <PartneredWith title="Our Verticals" />
         </div>
 
         <div id="ips">

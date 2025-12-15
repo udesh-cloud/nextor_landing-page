@@ -1,14 +1,14 @@
 import { useState, useEffect } from 'react';
-import lexarLogo from '../assets/images/lexar-vector-logo.png';
-import downloadLogo from '../assets/images/download.png';
-import imagesLogo from '../assets/images/images (1).png';
+import lexarLogo from '../assets/images/lexar-logo.png';
+import downloadLogo from '../assets/images/hp-logo.jpg';
+import imagesLogo from '../assets/images/shriya-properties-logo.jpg';
 import redingtonLogo from '../assets/images/Redington-Logo.png';
-import adevoLogo from '../assets/images/Adevo-New-LOGO-3p.png';
+import adevoLogo from '../assets/images/adevo-logo.png';
 import hinterlandLogo from '../assets/images/Screenshot 2025-12-13 151506.png';
-import cafeClutchLogo from '../assets/images/Screenshot 2025-12-13 151652.png';
+import cafeClutchLogo from '../assets/images/cafe-clutch-logo.png';
 import cyberOriginsLogo from '../assets/images/Cyber Origins (WITH TAGLINE).png';
 import strike1Logo from '../assets/images/For_dark_bg_usage-39.png';
-import hackonxLogo from '../assets/images/Screenshot 2025-12-13 172825.png';
+import hackonxLogo from '../assets/images/hackonx-logo.png';
 
 interface PartneredWithProps {
   title?: string;
@@ -32,7 +32,7 @@ export function PartneredWith({ title = 'Partnered With', debug = false }: Partn
     return () => window.removeEventListener('resize', handleResize);
   }, [debug]);
 
-  // Different logos for "Partnered With" vs "Our Brands"
+  // Different logos for "Partnered With" vs "Our Verticals"
   const partneredLogos = [
     { name: 'Lexar', image: lexarLogo },
     { name: 'HP', image: downloadLogo },
@@ -41,15 +41,15 @@ export function PartneredWith({ title = 'Partnered With', debug = false }: Partn
     { name: 'Adevō', image: adevoLogo }
   ];
 
-  const ourBrandsLogos = [
+  const ourVerticalsLogos = [
     { name: 'Hinterland Voyages', image: hinterlandLogo },
-    { name: 'Cafe Clutch', image: cafeClutchLogo },
     { name: 'Cyber Origins', image: cyberOriginsLogo },
     { name: 'Strike 1 Esports', image: strike1Logo },
+    { name: 'Cafe Clutch', image: cafeClutchLogo },
     { name: 'HackonX', image: hackonxLogo }
   ];
 
-  const logos = title === 'Our Brands' ? ourBrandsLogos : partneredLogos;
+  const logos = title === 'Our Verticals' ? ourVerticalsLogos : partneredLogos;
 
   // Calculate logo size based on viewport
   const getLogoSize = (logoName: string) => {

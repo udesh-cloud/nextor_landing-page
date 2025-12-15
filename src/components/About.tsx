@@ -3,9 +3,9 @@ import { Target, Lightbulb, Globe, Award } from 'lucide-react';
 
 export function About() {
   const stats = [
-    { value: '8+', label: 'VERTICALS', icon: Target },
-    { value: '500+', label: 'EVENTS DELIVERED', icon: Award },
-    { value: '50+', label: 'BRAND PARTNERSHIPS', icon: Globe },
+    { value: '5+', label: 'VERTICALS', icon: Target },
+    { value: '20+', label: 'EVENTS DELIVERED', icon: Award },
+    { value: '10+', label: 'BRAND PARTNERSHIPS', icon: Globe },
     { value: '1M+', label: 'COMMUNITY REACH', icon: Lightbulb }
   ];
 

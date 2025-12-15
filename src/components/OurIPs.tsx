@@ -5,27 +5,24 @@ export function OurIPs() {
     {
       icon: Zap,
       title: 'HACKONX',
-      description: 'A flagship innovation + gaming competition platform combining tech, creativity, and esports culture.',
+      description: 'A flagship innovation combining tech creativity and innovation',
       image: 'https://images.unsplash.com/photo-1759884247144-53d52c31f859?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYWNrYXRob24lMjBpbm5vdmF0aW9ufGVufDF8fHx8MTc2NTM2NDYzNHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
       features: [
-        'Tech + gaming hackathons',
-        'Innovation & coding challenges',
+        'Innovation and coding challenges',
         'Gamified competitions',
         'Talent discovery',
-        'Brand IP collaborations'
+        'Brand collaborations'
       ]
     },
     {
       icon: Coffee,
       title: 'CAFE CLUTCH',
-      description: 'A gaming cafe and community hub where gamers connect, compete, and create memorable experiences.',
+      description: 'A hub for grassroot-level gamers where brands connect with the community through tournaments, events, and authentic on-ground experiences at gaming cafes',
       image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnYW1pbmclMjBjYWZlJTIwY29mZmVlfGVufDF8fHx8fDE3NjUzNjQ2MzR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
       features: [
-        'Premium gaming setups',
-        'Community events & tournaments',
-        'Food & beverage services',
-        'Streaming facilities',
-        'Gaming merchandise store'
+        'Premium gaming experiences',
+        'Exclusive retail kiosks',
+        'Community engagements'
       ]
     }
   ];
@@ -43,7 +40,7 @@ export function OurIPs() {
             <span className="text-[#ffff00] tracking-[0.3em] uppercase">Our IPs</span>
           </div>
           <h2 className="text-4xl md:text-5xl tracking-tight">
-            FLAGSHIP BRANDS &<br />
+            BRIDGING FLAGSHIP BRANDS &<br />
             <span className="text-[#ffff00]">INNOVATION PLATFORMS</span>
           </h2>
         </div>

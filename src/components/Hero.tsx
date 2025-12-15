@@ -18,38 +18,6 @@ export function Hero({ onNavigate }: HeroProps) {
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
       </div>
 
-      {/* Decorative Elements */}
-      <div className="absolute top-32 right-20 hidden lg:block">
-        <svg width="200" height="200" viewBox="0 0 200 200" className="opacity-50">
-          <path d="M 20 100 Q 60 20, 100 60 T 180 100" stroke="#ffff00" fill="none" strokeWidth="2"/>
-        </svg>
-      </div>
-
-      <div className="absolute bottom-20 left-20 hidden lg:block">
-        <svg width="150" height="150" viewBox="0 0 150 150" className="opacity-50">
-          <path d="M 20 80 Q 40 40, 80 60 T 130 80" stroke="#ffff00" fill="none" strokeWidth="2"/>
-        </svg>
-      </div>
-
-      {/* Scroll Down Text */}
-      <div className="absolute left-8 bottom-20 hidden lg:block">
-        <div className="flex items-center gap-3">
-          <div className="w-px h-16 bg-[#ffff00]"></div>
-          <p className="text-[#ffff00] tracking-[0.3em] rotate-90 origin-left whitespace-nowrap transform translate-x-16">
-            SCROLL DOWN
-          </p>
-        </div>
-      </div>
-
-      {/* Side Numbers */}
-      <div className="absolute right-8 top-1/2 -translate-y-1/2 hidden lg:flex flex-col gap-8">
-        <div className="text-gray-600 tracking-wider">01</div>
-        <div className="w-px h-12 bg-gray-700"></div>
-        <div className="text-gray-600 tracking-wider">02</div>
-        <div className="w-px h-12 bg-gray-700"></div>
-        <div className="text-gray-600 tracking-wider">03</div>
-      </div>
-
       {/* Content */}
       <div className="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-12 w-full pt-20">
         <div className="max-w-3xl">
@@ -63,7 +31,7 @@ export function Hero({ onNavigate }: HeroProps) {
             </div>
             <div>
               <div className="flex items-baseline gap-1">
-                <span className="text-3xl text-[#ffff00]">8</span>
+                <span className="text-3xl text-[#ffff00]">5</span>
                 <span className="text-[#ffff00]">+</span>
               </div>
               <p className="text-sm text-gray-400">Verticals worldwide</p>
