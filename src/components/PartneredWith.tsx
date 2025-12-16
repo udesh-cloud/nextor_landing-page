@@ -6,15 +6,13 @@ import adevoLogo from '../assets/images/adevo-logo.png';
 import hinterlandLogo from '../assets/images/Screenshot 2025-12-13 151506.png';
 import cyberOriginsLogo from '../assets/images/Cyber Origins (WITH TAGLINE).png';
 import strike1Logo from '../assets/images/For_dark_bg_usage-39.png';
-import cafeClutchLogo from '../assets/images/cafe-clutch-logo.png';
-import hackonxLogo from '../assets/images/hackonx-logo.png';
 
 interface PartneredWithProps {
   title?: string;
 }
 
-export function PartneredWith({ title = 'Partnered With' }: PartneredWithProps) {
-  // Different logos for "Partnered With" vs "Our Verticals"
+export function PartneredWith({ title = 'Trusted by' }: PartneredWithProps) {
+  // Different logos for "Trusted by" vs "Our Verticals"
   const partneredLogos = [
     { name: 'Lexar', image: lexarLogo },
     { name: 'HP', image: downloadLogo },
@@ -26,13 +24,11 @@ export function PartneredWith({ title = 'Partnered With' }: PartneredWithProps) 
   const ourVerticalsLogos = [
     { name: 'Hinterland Voyages', image: hinterlandLogo },
     { name: 'Cyber Origins', image: cyberOriginsLogo },
-    { name: 'Strike 1 Esports', image: strike1Logo },
-    { name: 'Cafe Clutch', image: cafeClutchLogo },
-    { name: 'HackonX', image: hackonxLogo }
+    { name: 'Strike 1 Esports', image: strike1Logo }
   ];
 
   const logos = title === 'Our Verticals' ? ourVerticalsLogos : partneredLogos;
-  
+
   // Duplicate logos for seamless loop
   const duplicatedLogos = [...logos, ...logos];
 
@@ -46,14 +42,14 @@ export function PartneredWith({ title = 'Partnered With' }: PartneredWithProps) 
         <div className="overflow-hidden relative">
           <div className="flex items-center gap-8 md:gap-12 animate-scroll">
             {duplicatedLogos.map((logo, index) => (
-              <img 
+              <img
                 key={index}
-                src={logo.image} 
-                alt={logo.name} 
+                src={logo.image}
+                alt={logo.name}
                 className="w-auto h-auto object-contain flex-shrink-0"
                 style={{
-                  maxHeight: '80px',
-                  maxWidth: '200px'
+                  maxHeight: logo.name === 'Cyber Origins' || logo.name === 'Strike 1 Esports' ? '160px' : '80px',
+                  maxWidth: logo.name === 'Cyber Origins' || logo.name === 'Strike 1 Esports' ? '360px' : '200px'
                 }}
               />
             ))}

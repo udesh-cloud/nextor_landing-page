@@ -46,7 +46,7 @@ export function Footer({ onNavigate }: FooterProps) {
             </div>
             <p className="text-gray-500 mb-6 max-w-md leading-relaxed">
               A multi-vertical powerhouse delivering esports, immersive entertainment, 
-              cybersecurity, travel, marketing, and digital-first ecosystems worldwide.
+              cybersecurity, travel, marketing and digital-first ecosystems worldwide.
             </p>
             <div className="flex gap-3">
               {socialLinks.map((social, index) => {

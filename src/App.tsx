@@ -50,11 +50,11 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-white">
       <Navigation activeSection={activeSection} onNavigate={handleNavigate} />
-      
+
       <main>
         <div id="home">
           <Hero onNavigate={handleNavigate} />
-          <PartneredWith title="Partnered With" />
+          <PartneredWith title="Trusted by" />
         </div>
 
         <div id="about">

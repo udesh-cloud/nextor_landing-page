@@ -1,16 +1,12 @@
 import hinterlandLogo from '../assets/images/Screenshot 2025-12-13 151506.png';
-import cafeClutchLogo from '../assets/images/cafe-clutch-logo.png';
 import cyberOriginsLogo from '../assets/images/Cyber Origins (WITH TAGLINE).png';
 import strike1Logo from '../assets/images/For_dark_bg_usage-39.png';
-import hackonxLogo from '../assets/images/hackonx-logo.png';
 
 export function Clients() {
   const logos = [
     { name: 'Hinterland Voyages', image: hinterlandLogo },
-    { name: 'Cafe Clutch', image: cafeClutchLogo },
     { name: 'Cyber Origins', image: cyberOriginsLogo },
-    { name: 'Strike 1 Esports', image: strike1Logo },
-    { name: 'HackonX', image: hackonxLogo }
+    { name: 'Strike 1 Esports', image: strike1Logo }
   ];
 
   return (
@@ -33,8 +29,8 @@ export function Clients() {
 
         {/* Client Logos Grid */}
         <div className="border-t border-gray-800/50 pt-12">
-          <h3 className="text-center text-gray-500 mb-8 tracking-[0.3em] uppercase">
-            Partnered With
+          <h3 className="text-center text-white mb-8 tracking-[0.3em] uppercase">
+            Trusted by
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {logos.map((logo, index) => (
@@ -42,13 +38,13 @@ export function Clients() {
                 key={index}
                 className="flex items-center justify-center p-6 bg-black border border-gray-800/50 hover:border-[#ffff00]/50 transition-all group rounded"
               >
-                <img 
-                  src={logo.image} 
-                  alt={logo.name} 
+                <img
+                  src={logo.image}
+                  alt={logo.name}
                   className="max-w-full h-auto object-contain"
                   style={{
-                    maxHeight: '80px',
-                    maxWidth: '200px'
+                    maxHeight: logo.name === 'Cyber Origins' || logo.name === 'Strike 1 Esports' ? '160px' : '80px',
+                    maxWidth: logo.name === 'Cyber Origins' || logo.name === 'Strike 1 Esports' ? '360px' : '200px'
                   }}
                 />
               </div>

@@ -44,7 +44,7 @@ import { PartneredWith } from './components/PartneredWith';
 import { PartneredWith } from './components/PartneredWith.debug';
 
 // Then add debug prop:
-<PartneredWith title="Partnered With" debug={true} />
+<PartneredWith title="Trusted by" debug={true} />
 ```
 
 ### Option B: Add debug to existing component
@@ -62,7 +62,7 @@ interface PartneredWithProps {
 }
 
 // Add debug state and effect inside component
-export function PartneredWith({ title = 'Partnered With', debug = false }: PartneredWithProps) {
+export function PartneredWith({ title = 'Trusted by', debug = false }: PartneredWithProps) {
   const [viewport, setViewport] = useState({
     width: typeof window !== 'undefined' ? window.innerWidth : 0,
   });

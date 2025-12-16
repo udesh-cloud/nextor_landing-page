@@ -30,8 +30,8 @@ export function About() {
 
             <p className="text-gray-400 mb-6 leading-relaxed border-l-2 border-[#ffff00] pl-6">
               Nextor is more than a company — we're a movement that bridges gaming, technology, 
-              marketing, and lifestyle. Our multi-vertical approach allows us to create holistic 
-              ecosystems where brands, creators, and communities thrive.
+              marketing and lifestyle. Our multi-vertical approach allows us to create holistic 
+              ecosystems where brands, creators and communities thrive.
             </p>
             <p className="text-gray-400 mb-6 leading-relaxed border-l-2 border-gray-800 pl-6">
               From powering India's biggest esports tournaments to protecting enterprises with 
@@ -40,7 +40,7 @@ export function About() {
             </p>
             <p className="text-gray-400 leading-relaxed border-l-2 border-gray-800 pl-6">
               Our mission is simple: empower brands and communities worldwide through innovation, 
-              excellence, and immersive experiences that leave lasting impact.
+              excellence and immersive experiences that leave lasting impact.
             </p>
           </div>
 

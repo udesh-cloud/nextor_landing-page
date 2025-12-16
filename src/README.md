@@ -39,7 +39,7 @@ src/
 ## Sections
 
 1. **Hero**: Main landing section with hero image and CTAs
-2. **Partnered With**: Partner logos (Hinterland Voyages, Cafe Clutch, Cyber Origins, Strike 1 Esports)
+2. **Trusted by**: Partner logos (Hinterland Voyages, Cafe Clutch, Cyber Origins, Strike 1 Esports)
 3. **About**: Company overview and statistics
 4. **Verticals**: Core business verticals (7 verticals displayed)
 5. **Our IPs**: Flagship brands (HackonX, Cafe Clutch)

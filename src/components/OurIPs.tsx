@@ -1,4 +1,6 @@
 import { ArrowRight, Zap, Coffee } from 'lucide-react';
+import cafeClutchLogo from '../assets/images/cafe-clutch-logo.png';
+import hackonxLogo from '../assets/images/hackonx-logo.png';
 
 export function OurIPs() {
   const ips = [
@@ -6,7 +8,7 @@ export function OurIPs() {
       icon: Zap,
       title: 'HACKONX',
       description: 'A flagship innovation combining tech creativity and innovation',
-      image: 'https://images.unsplash.com/photo-1759884247144-53d52c31f859?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYWNrYXRob24lMjBpbm5vdmF0aW9ufGVufDF8fHx8MTc2NTM2NDYzNHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      image: hackonxLogo,
       features: [
         'Innovation and coding challenges',
         'Gamified competitions',
@@ -17,8 +19,8 @@ export function OurIPs() {
     {
       icon: Coffee,
       title: 'CAFE CLUTCH',
-      description: 'A hub for grassroot-level gamers where brands connect with the community through tournaments, events, and authentic on-ground experiences at gaming cafes',
-      image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnYW1pbmclMjBjYWZlJTIwY29mZmVlfGVufDF8fHx8fDE3NjUzNjQ2MzR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      description: 'A hub for grassroot-level gamers where brands connect with the community through tournaments, events and authentic on-ground experiences at gaming cafes',
+      image: cafeClutchLogo,
       features: [
         'Premium gaming experiences',
         'Exclusive retail kiosks',
@@ -58,7 +60,7 @@ export function OurIPs() {
                   <img
                     src={ip.image}
                     alt={ip.title}
-                    className="w-full h-full object-cover opacity-30 group-hover:opacity-40 group-hover:scale-110 transition-all duration-500"
+                    className="w-full h-full object-cover opacity-15 group-hover:opacity-25 group-hover:scale-110 transition-all duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent"></div>
                 </div>
