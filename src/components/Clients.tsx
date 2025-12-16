@@ -38,9 +38,9 @@ export function Clients() {
                 key={index}
                 className="flex items-center justify-center p-6 bg-black border border-gray-800/50 hover:border-[#ffff00]/50 transition-all group rounded"
               >
-                <img
-                  src={logo.image}
-                  alt={logo.name}
+                <img 
+                  src={logo.image} 
+                  alt={logo.name} 
                   className="max-w-full h-auto object-contain"
                   style={{
                     maxHeight: logo.name === 'Cyber Origins' || logo.name === 'Strike 1 Esports' ? '160px' : '80px',

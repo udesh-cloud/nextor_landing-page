@@ -56,11 +56,11 @@ export function OurIPs() {
                 className="group relative bg-black border border-gray-800/50 overflow-hidden hover:border-[#ffff00]/50 transition-all duration-300"
               >
                 {/* Image Background */}
-                <div className="relative h-64 overflow-hidden">
+                <div className="relative h-32 overflow-hidden">
                   <img
                     src={ip.image}
                     alt={ip.title}
-                    className="w-full h-full object-cover opacity-15 group-hover:opacity-25 group-hover:scale-110 transition-all duration-500"
+                    className="w-full h-full object-cover opacity-15 group-hover:opacity-25 transition-all duration-500 scale-50"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent"></div>
                 </div>

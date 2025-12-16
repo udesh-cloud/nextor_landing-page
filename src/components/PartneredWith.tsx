@@ -1,3 +1,4 @@
+import React from 'react';
 import lexarLogo from '../assets/images/lexar-logo.png';
 import downloadLogo from '../assets/images/hp-logo.jpg';
 import imagesLogo from '../assets/images/shriya-properties-logo.jpg';
@@ -29,8 +30,8 @@ export function PartneredWith({ title = 'Trusted by' }: PartneredWithProps) {
 
   const logos = title === 'Our Verticals' ? ourVerticalsLogos : partneredLogos;
 
-  // Duplicate logos for seamless loop
-  const duplicatedLogos = [...logos, ...logos];
+  // Duplicate logos multiple times for seamless infinite loop
+  const duplicatedLogos = [...logos, ...logos, ...logos, ...logos];
 
   return (
     <section className="py-16 bg-black border-y border-gray-800/50">
@@ -40,7 +41,7 @@ export function PartneredWith({ title = 'Trusted by' }: PartneredWithProps) {
         </h3>
         {/* Horizontal scrolling animation */}
         <div className="overflow-hidden relative">
-          <div className="flex items-center gap-8 md:gap-12 animate-scroll">
+          <div className="flex items-center gap-4 md:gap-6 animate-scroll">
             {duplicatedLogos.map((logo, index) => (
               <img
                 key={index}
